@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari Superherois</title>
+</head>
+<body>
+    <header>
+        <h1><strong>Enquesta Superherois</strong></h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <label for="nom">Nom del Superheroi:</label>
+                <input type="text" id="nom" name="nom" minlength="3" maxlength="30">
+                <br>
+                <label for="email">Correu de Contacte:</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="password">Clau secreta:</label>
+                <input type="password" id="password" name="password">
+                <br>
+                <label for="batalles">Batalles lluitades aquest any:</label>
+                <input type="number" id="batalles" name="batalles">
+                <br>
+                <label for="poder">Nivell de poder (1 a 100):</label>
+                <input type="range" id="poder" name="poder">
+                <br>
+                <label for="data">Data primera aparició:</label>
+                <input type="date" id="data" name="data">
+                <br>
+                <label for="hora">Hora disponible per reunions:</label>
+                <input type="time" id="hora" name="hora">
+                <br>
+                <label for="color">Color principal vestit:</label>
+                <input type="color" id="color" name="color">
+                <br>
+                <label for="Web">Pàgina web oficial:</label>
+                <input type="url" id="web" name="web" placeholder="(Pàgina Web)">
+                <br>
+                <label for="tel">Telèfon d'emergències:</label>
+                <input type="tel" id="tel" name="tel" placeholder="9 dígits">
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Tipus de Personatge</legend>
+                <input type="radio" id="heroi" name="tipus" required>
+                <label for="heroi">Heroi</label>
+                <input type="radio" id="antiheroi" name="tipus" value="antiHeroi">
+                <label for="antiHeroi">Antiheroi</label>
+                <input type="radio" id="malvat" name="tipus" value="Malvat">
+                <label for="malvat">Malvat</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><strong>Super Poders</strong></legend>
+                <input type="checkbox" name="poder" value="Vol">
+                Volar<br>
+                <input type="checkbox" name="poder" value="Invisibilitat">
+                Invisibilitat<br>
+                <input type="checkbox" name="poder" value="Super Força">
+                Super Força<br>
+                <input type="checkbox" name="poder" value="Telepatía">
+                Telepatía<br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Univers</legend>
+                <label for="Univers">Univers:</label>
+                <select name="Univers" id="Univers" required>
+                    <option value="">Selecciona...</option>
+                    <option>Marvel</option>
+                    <option>DC</option>
+                    <option>Mnaga</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><strong>Enquesta SuperHeroica</strong></legend>
+                <p>Quin es el teu enemic preferit?</p>
+                <input type="radio" name="enemic" value="Joker" required> Joker<br>
+                <input type="radio" name="enemic" value="Thanos"> Thanos<br>
+                <input type="radio" name="enemic" value="Green Goblin"> Green Goblin<br>
+                <br>
+                <p>Quin seria el teu gadget ideal?</p>
+                <input type="radio" name="gadget" value="Bat-cinturó" required> Bat-cinturó<br>
+                <input type="radio" name="gadget" value="Nanosuit"> Nanosuit<br>
+                <input type="radio" name="gadget" value="Martell encantat"> Martell encantat<br>
+                <br>
+                <p>Amb quin superheroi mai faries equip?</p>
+                <input type="radio" name="noEquip" value="Deadpool" required> Deadpool<br>
+                <input type="radio" name="noEquip" value="Loki"> Loki<br>
+                <input type="radio" name="noEquip" value="Harley Quinn"> Harley Quinn<br>
+                <br>
+                <p>Quin mitjà de transport prefereixes?</p>
+                <input type="radio" name="transport" value="Batmobile" required> Batmobile<br>
+                <input type="radio" name="transport" value="Nau espacial"> Nau espacial<br>
+                <input type="radio" name="transport" value="Teletransportació"> Teletransportació<br>
+                <br>
+                <p>On tens la teva base secreta?</p>
+                <input type="radio" name="base" value="Cova subterrània" required> Cova subterrània<br>
+                <input type="radio" name="base" value="Estació orbital"> Estació orbital<br>
+                <input type="radio" name="base" value="Mansió misteriosa"> Mansió misteriosa<br>
+                <br>
+                <p>Quin és el teu snack preferit durant la patrulla?</p>
+                <input type="radio" name="snack" value="Tacos" required> Tacos<br>
+                <input type="radio" name="snack" value="Pizza"> Pizza<br>
+                <input type="radio" name="snack" value="Bat-galetes"> Bat-galetes<br>
+                <br>
+                <p>Quin paper tindries a un equip?</p>
+                <input type="radio" name="rol" value="Líder" required> Líder<br>
+                <input type="radio" name="rol" value="Cervell de l’operació"> Cervell de l’operació<br>
+                <input type="radio" name="rol" value="Guerrer imparables"> Guerrer imparable<br>
+                <br>
+                <p>Quin gènere de banda sonora et defineix?</p>
+                <input type="radio" name="musica" value="Rock èpic" required> Rock èpic<br>
+                <input type="radio" name="musica" value="Orquestra dramàtica"> Orquestra dramàtica<br>
+                <input type="radio" name="musica" value="Electrònica futurista"> Electrònica futurista<br>
+                <br>
+                <p>Quin és el teu moment d’acció preferit?</p>
+                <input type="radio" name="moment" value="Caçar dolents de nit" required> Caçar dolents de nit<br>
+                <input type="radio" name="moment" value="Salvar el món a l’últim segon"> Salvar el món a l’últim segon<br>
+                <input type="radio" name="moment" value="Escenes de vol"> Escenes de vol<br>
+                <br>
+                <p>Quina frase et representa més?</p>
+                <input type="radio" name="frase" value="La justícia mai descansa" required> La justícia mai descansa<br>
+                <input type="radio" name="frase" value="El caos és el meu joc"> El caos és el meu joc<br>
+                <input type="radio" name="frase" value="El poder és responsabilitat"> El poder és responsabilitat<br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dades Personals</legend>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Preguntes Temàtica 1</legend>
+                <label for="pregunta1">Quina és la teva afició preferida?</label>
+                <input type="text" id="pregunta1" name="pregunta1">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Preguntes Temàtica 2</legend>
+                <label for="pregunta2">Quina és la teva película preferida?</label>
+                <select id="pregunta2" name="pregunta2">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+                </select>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        &copy;-|-Contacte: adria_cladellasgarcia@iescarlesvallbona.cat
+        <address>Camp de les Moreres, 14 08401 Granollers</address>
+    </footer>
+</body>
+</html>

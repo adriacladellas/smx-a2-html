@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció Online</title>
+</head>
+<body>
+    <header>
+        <h1><strong>Inscripció curs online de Informàtica</strong></h1>
+    </header>
+    <main>
+        <form action="./servidor.php" method="get">
+        <fieldset>
+            <legend><strong>Dades Personals</strong></legend>
+                <label for="nom">Nom complet:</label>
+                <input type="text" id="nom" required minlength="2" maxlength="10"><br>
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" required><br>
+                <label for="telefon">Telèfon</label>
+                <input type="tel" id="telefon" required maxlength="9 dígits"><br>
+                <label for="data">Data naixament:</label>
+                <input type="date" id="data" required><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><strong>Tipus de curs i experiència Prèvia</strong></legend>
+            <label for="cursos">Categorias de Cursos:</label>
+            <select name="cursos" id="cursos">
+                <optgroup label="Informàtica">
+                    <option>Programació Bàsica</option>
+                    <option>Desenvolupament Web</option>
+                    <option>Desenvolupament Software</option>
+                    <option>Administració de Sistemes</option>
+                </optgroup>
+            </select>
+        </fieldset>
+            <br>
+        <fieldset>
+            <legend><strong>Nivell d'experiència</strong></legend>
+            <label for="novell">Novell</label>
+            <input type="radio" id="novell">
+            <label for="intermedi">Intermedi</label>
+            <input type="radio" id="Intermedi">
+            <label for="avancat">Avançat</label>
+            <input type="radio" id="avancat">
+        </fieldset>
+        <br>
+            <fieldset>
+                <legend><strong>Interessos i Motivació pel Curs</strong></legend>
+                <legend>Interessa't per:</legend>
+                    <label for="interessos">Projectes Pràctics</label>
+                    <input type="checkbox" name="interessos"><br>
+                    <label for="interessos">Tutories Online</label>
+                    <input type="checkbox" name="interessos"><br>
+                    <label for="interessos">Certificats</label>
+                    <input type="checkbox" name="interessos"><br>
+                    <label for="Motivació">Per què vols fer el curs?</label>
+                    <textarea name="Motivació" id="Motivació" required placeholder="Explica per què t'agraderia fer el curs..." ></textarea>
+                    <label for="Opcions de Feina">Diversos llocs de Treball:</label>
+                    <input list="llista de feina" id="Opcions de Feina" name="Feina">
+                    <datalist id="llista de feina">
+                            <option value="Ciberseguretat"></option>
+                            <option value="Dev0ps"></option>
+                            <option value="Frontend"></option>
+                            <option value="Backend"></option>
+                    </datalist>
+            </fieldset>
+        <br>
+        <input type="file" name="document" accept=".pdf">
+        <br>
+        <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;-|-Contacte: adria_cladellasgarcia@iescarlesvallbona.cat  
+        <address>Camp de les Moreres, 14 08401 Granollers</address></p>
+    </footer>
+</body>
+</html>
